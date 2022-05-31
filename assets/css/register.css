@@ -1,0 +1,300 @@
+/*SOMAIRE*/
+/*********************** NAV ************************/
+/*********************** BODY ************************/
+/*********************** FOOTER ************************/
+/*********************** PARTIE MOBILE ************************/
+/*********************** LE MENU DEROULANT ************************/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+/* enlver le margin et le pading pour tout la page */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:"PT sans Narrow", sans-serif;
+    outline: none;
+}
+/*********************** NAV ************************/
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.logo-container {
+    display: flex;
+}
+.logo {
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.title-site {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.title-page {
+    margin-bottom: 50px;
+    font-size: 55px;
+    text-align: center;
+    color: red;
+}
+/*********************** BODY ************************/
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+    margin-bottom: 60px;
+    padding: 20px;
+    padding-top: 40px;
+    border-radius: 20px;
+    background-color: #040176;
+    box-shadow: 0 0 15px #2c2d2e;
+}
+form input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+.input-reg {
+    margin:0 10%;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: focus;
+    box-shadow: 0 0 15px #4a8bec;
+}
+
+.opt {
+    color: rgb(100, 100, 100);
+}
+
+.reg-btn {
+    margin:0 40%;
+    padding: 5px;
+    font-size: 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background-color: #2D78E9;
+    box-shadow: 0 0 15px #2c2d2e;
+}
+/*********************** FOOTER ************************/
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color:#040176;
+}
+.fm-logo {
+    width: 250px;
+    border-radius: 10px;
+}
+.socialnw-logo {
+    margin-right: 70px;
+    margin-top: 2px;
+    font-size: 40px;
+    color: white;
+}
+
+footer .socialnw a i img{
+    filter:  brightness(0) invert(1);
+    height: 50px;
+}
+
+.warning {
+    font-size: 35px;
+    text-align: center;
+    color: red;
+}
+
+/*********************** LE MENU DEROULANT ************************/
+.dropdown {
+    position: relative;
+    width: 250px;
+    height: 60px;
+    margin-top: 38px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background: white;
+    /* pas visible avec le bg*/
+    box-shadow: 20px 20px 60px #d0d0d0,-20px -20px 60px #ffffff;
+    /*effet Neomorphism*/
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+
+.dropdown:active {
+    background: white;
+    box-shadow: inset 7px 7px 14px #cccdd1, -7px -7px 14px #ffffff;
+}
+.dropdown:hover{
+    background: rgb(240, 240, 240);
+}
+
+.dropdown input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border: none;
+    outline: none;
+    background: none;
+    color: #37373d;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.dropdown input:focus {
+    outline: none;
+    border: none;
+}
+
+.dropdown i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #37373d;
+}
+
+.dropdown.show i {
+    transform: translateY(-50%) rotate(180deg);
+    transition: all 500ms ease-in-out;
+}
+
+.options {
+    position: absolute;
+    top: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background: white;
+    /* pas visible avec le bg*/
+    box-shadow: 20px 20px 60px #d0d0d0,-20px -20px 60px #ffffff;
+    /*effet Neomorphism*/
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+
+.dropdown.show .options {
+    visibility: visible;
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+}
+
+.options li {
+    padding: 15px;
+    position: relative;
+    list-style-type: none;
+    color: #37373d;
+    transition: all 500ms ease-in-out;
+}
+
+.options li a {
+    text-decoration: none;
+    color: #37373d;
+}
+
+.options li:first-child {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.options li:last-child {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.options li:hover {
+    background: rgb(0,0,0,.1);
+}
+
+.options li:last-child{
+    background-color: #DC3545;
+}
+
+.options li:last-child:hover{
+    background-color: #e9394b;
+}
+
+.options li:last-child a,
+.options li:last-child a i{
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add{
+    margin: 0 10%;
+    margin-bottom: 30px;
+    padding: 20px;
+    padding-top: 40px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    box-shadow: 0 0 10px #040176;
+}
+.true{
+    padding: 25px;
+    background-color: #198754;
+    color: white;
+    font-size: 25px;
+}
+.false{
+    padding: 25px;
+    background-color: #DC3545;
+    color: white;
+    font-size: 25px;
+}
+/*********************** Partie mobile *****************/
+@media screen and (max-width: 850px){
+    .dropdown{
+        display: none;
+    }
+    /* logo-container */
+    .logo-container .logo{
+        height: 70px;
+    }
+    .logo-container .title-site{
+        font-size: 25px;
+    }
+    .title-page{
+        margin-bottom: 30px;
+        font-size: 35px;
+    }
+    /* footer */
+    .fm-logo{
+        width: 100px;
+        border-radius: 5px;
+    }
+    .socialnw-logo {
+        margin-right: 30px;
+        font-size: 30px;
+    }
+    footer .socialnw a i img{
+        filter:  brightness(0) invert(1);
+        height: 30px;
+    }
+    /*form inputs*/
+    .input-reg {
+        padding: 7px;
+        font-size: 22px;
+        border-radius: 5px;
+    }
+    .reg-btn {
+        font-size: 18px;
+        border-radius: 5px;
+    }
+}

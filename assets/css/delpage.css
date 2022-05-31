@@ -1,0 +1,446 @@
+/*SOMAIRE*/
+/*********************** NAV ************************/
+/*********************** BODY ************************/
+/*********************** FOOTER ************************/
+/*********************** LE MENU DEROULANT ************************/
+/*********************** LA BARE DE RECHERCHE************************/
+/*********************** PARTIE MOBILE ************************/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+/* enlver le margin et le pading pour tout la page */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:"PT sans Narrow", sans-serif;
+    outline: none;
+}
+/*********************** NAV ************************/
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.logo-container {
+    display: flex;
+}
+.logo {
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.title-site {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.space{
+    display: block;
+    height: 20px;
+}
+/*********************** BODY ************************/
+.title-page {
+    margin-bottom: 20px;
+    font-size: 55px;
+    text-align: center;
+    color: red;
+}
+
+.user-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.add{
+    margin: 0 10%;
+    margin-bottom: 30px;
+    padding: 20px;
+    padding-top: 40px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    box-shadow: 0 0 10px #040176;
+}
+.true{
+    padding: 25px;
+    background-color: #198754;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.false{
+    padding: 25px;
+    background-color: #DC3545;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.user {
+    padding: 20px;
+    margin-bottom: 90px;
+    font-size: 22px;
+    width: 300px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background: #040176;
+    color: black;
+}
+
+.user-item {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background: white;
+}
+
+.delbtn {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: white;
+    background: red;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.delbtn:hover{
+    background-color: rgb(177, 0, 0);
+}
+
+.cancel {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: white;
+    background: #4a8bec;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.cancel:hover{
+    background-color: #1365df;
+}
+
+.hidden-div {
+    display: none;
+    justify-content: space-around;
+}
+
+.delete {
+    margin: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: white;
+    background: red;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.delete:hover{
+    background-color: rgb(240, 82, 82);
+}
+
+.question {
+    display: none;
+    text-align: center;
+    color: white;
+}
+/*********************** FOOTER ************************/
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color:#040176;
+}
+.fm-logo {
+    width: 250px;
+    border-radius: 10px;
+}
+.socialnw-logo {
+    margin-right: 70px;
+    margin-top: 2px;
+    font-size: 40px;
+    color: white;
+}
+
+footer .socialnw a i img{
+    filter:  brightness(0) invert(1);
+    height: 50px;
+}
+
+/*********************** LE MENU DEROULANT ************************/
+.dropdown {
+    position: relative;
+    width: 250px;
+    height: 60px;
+    margin-top: 38px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background: white;
+    /* pas visible avec le bg*/
+    box-shadow: 20px 20px 60px #d0d0d0,-20px -20px 60px #ffffff;
+    /*effet Neomorphism*/
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+
+.dropdown:active {
+    background: white;
+    box-shadow: inset 7px 7px 14px #cccdd1, -7px -7px 14px #ffffff;
+}
+
+.dropdown:hover{
+    background: rgb(240, 240, 240);
+}
+
+.dropdown input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border: none;
+    outline: none;
+    background: none;
+    color: #37373d;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.dropdown input:focus {
+    outline: none;
+    border: none;
+}
+
+.dropdown i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #37373d;
+}
+
+.dropdown.show i {
+    transform: translateY(-50%) rotate(180deg);
+    transition: all 500ms ease-in-out;
+}
+
+.options {
+    position: absolute;
+    top: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background: white;
+    /* pas visible avec le bg*/
+    box-shadow: 20px 20px 60px #d0d0d0,-20px -20px 60px #ffffff;
+    /*effet Neomorphism*/
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+
+.dropdown.show .options {
+    visibility: visible;
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+}
+
+.options li {
+    padding: 15px;
+    position: relative;
+    list-style-type: none;
+    color: #37373d;
+    transition: all 500ms ease-in-out;
+}
+
+.options li a {
+    text-decoration: none;
+    color: #37373d;
+}
+
+.options li:first-child {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.options li:last-child {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.options li:hover {
+    background: rgb(0,0,0,.1);
+}
+
+.options li:last-child{
+    background-color: #DC3545;
+}
+
+.options li:last-child:hover{
+    background-color: #e9394b;
+}
+
+.options li:last-child a,
+.options li:last-child a i{
+    color: white;
+}
+/*********************** LA BARE DE RECHERCHE************************/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__search-content{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .searchBar {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .form-search input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .form-search select{
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid transparent;
+    padding: 10px;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+  .form-search input[type=text] {
+    background-color: #f1f1f1;
+    width:800px;
+  }
+  
+  .form-search input[type=submit] {
+    background-color: DodgerBlue;
+    color: #fff;
+    cursor: not-allowed;
+    border-radius: 5px;
+  }
+  .autocomplete-items{
+    color: white;
+  }
+  .autocomplete-items{
+    position: relative;
+    display: inline-block;
+  }
+  .autocomplete-items-active p{
+    color: black;
+    width:800px;
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 13.6%;
+  }
+  .autocomplete-items-active p:hover{
+    background-color: rgb(182, 179, 179);
+    color: black;
+  }
+  #json-data{
+    display: none;
+  }
+  .autocomplete-items{
+    display: none;
+  }
+  .autocomplete-items-active{
+    display: block;
+    cursor: pointer;
+    color: white;
+  }
+  .div-error{
+    display: flex;
+    justify-content: center;
+  }
+
+/*********************** PARTIE MOBILE ************************/
+@media screen and (max-width: 850px){
+    .dropdown{
+        display: none;
+    }
+        /* logo-container */
+    .logo-container .logo{
+        height: 70px;
+    }
+    .logo-container .title-site{
+        font-size: 25px;
+    }
+    /* footer */
+    .fm-logo{
+        width: 100px;
+        border-radius: 5px;
+    }
+    .socialnw-logo {
+        margin-right: 30px;
+        font-size: 30px;
+    }
+
+    footer .socialnw a i img{
+        filter:  brightness(0) invert(1);
+        height: 30px;
+    }
+    .title-page{
+        font-size: 35px;
+    }
+    .socialnw-logo{
+        margin-right: 70px;
+        margin-top: 2px;
+        font-size: 30px;
+        color: white;
+    }
+    .form-search input[type=text] {
+        background-color: #f1f1f1;
+        width:350px;
+    }
+    .autocomplete-items-active p{
+        color: black;
+        width: 350px;
+    }
+    .user {
+        padding: 15px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        width: 280px;
+        border-radius: 5px;
+    }
+    
+    .user-item {
+        padding: 5px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .delbtn,
+    .delete,
+    .cancel{
+        font-size: 16px;
+        border-radius: 5px;
+    }
+}

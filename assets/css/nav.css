@@ -1,0 +1,201 @@
+/*********************** LE MENU QUI S'AFFICHE EN MODE TELEPHONE ***********************/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+.navbar__logo img {
+    height: 100px;
+}
+/*********************** VARIABLE ************************/
+:root {
+    --font-size:1rem;
+}
+
+.light-mode {
+    --navbar-color: #222;
+    --navbar-bg-color: #fff;
+}
+
+.dark-mode {
+    --navbar-color: #FFF;
+    --navbar-bg-color: #000;
+}
+ul {
+    list-style: none;
+}
+
+.navbar {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--navbar-color);
+    background-color: var(--navbar-bg-color);
+    z-index: 9997;
+    margin: 0;
+}
+
+.navbar__links {
+    display: flex;
+}
+
+.navbar__links li:last-child{
+    background-color: #DC3545;
+}
+.navbar__links li:last-child:hover{
+    background-color: #e93939;
+}
+.navbar__links li:last-child a,
+.navbar__links li:last-child a i{
+    color: white;
+}
+
+.navbar__link {
+    padding: 0 10px;
+}
+
+.navbar__link > a {
+    text-decoration: none;
+    color: var(--navbar-color);
+}
+
+.burger {
+    display: none;
+}
+
+/*********************** PARTIE MOBILE ************************/
+@media screen and (max-width: 850px) {
+    .navbar{
+        display: flex;
+    }
+    .navbar__links {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 0%;
+        overflow: hidden;
+        height: calc(100vh - 65px);
+        top: 100px;
+        right: 0;
+        background: var(--navbar-bg-color);
+        transition: all .4s ease;
+    }
+
+    .show-nav .navbar__links{
+        width: 100%;
+    }
+
+    .navbar__link {
+        transform: translateX(101%);
+    }
+
+    .show-nav .navbar__link {
+        transform: translateX(0);
+    }
+
+    .navbar__link > a {
+        display: block;
+        padding: 1rem;
+        font-size: 1.6rem;
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar__link:hover {
+        background-color: rgb(209, 206, 206);
+    }
+    /* Toggle menu  */
+
+    .burger {
+        display: block;
+        height: 40px;
+        width: 45px;
+        position :relative;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 45px;
+        height: 4px;
+        background: var(--navbar-color);
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+    }
+
+    .show-nav .bar {
+        width: 0;
+        background: transparent;
+    }
+
+    .bar::before , .bar::after {
+        content: "";
+        width: 45px;
+        height: 4px;
+        left: 0;
+        position: absolute;
+        background: var(--navbar-color);
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+    }
+
+    .bar::before {
+        transform: translateY(-12px);
+    }
+
+    .show-nav .bar::before {
+        transform: rotate(45deg);
+    }
+
+    .bar::after {
+        transform: translateY(12px);
+    }
+
+    .show-nav .bar::after {
+        transform: rotate(-45deg);
+    }
+
+    /* Bonus - animation */
+
+    .show-nav .first {
+        transition: all 0.5s ease-out;
+    }
+
+    .show-nav .second {
+        transition: all 0.6s ease-out;
+    }
+
+    .show-nav .third {
+        transition: all 0.7s ease-out;
+    }
+
+    .show-nav .four {
+        transition: all 0.8s ease-out;
+    }
+
+    .show-nav .fifth {
+        transition: all 0.9s ease-out;
+    }
+
+    .show-nav .sixth {
+        transition: all 1s ease-out;
+    }
+
+    .show-nav .seventh {
+        transition: all 1.1s ease-out;
+    }
+
+    .show-nav .eighth {
+        transition: all 1.2s ease-out;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .navbar__link > a::after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 1px;
+        background: var(--navbar-color);
+        transition: width .3s;
+    }
+
+}

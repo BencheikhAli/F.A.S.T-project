@@ -1,0 +1,6 @@
+type de probleme;ip equipement;genre;materiel;nom et prenom(ou pseudo);description;wms;date de signalement;heure de signalement;process;localisation
+lenteur;10.14.250.214;TR;R50;pakonyk daniel;Tests;Reflex;2021-11-04;12:06 pm;recept;Allée 801 profondeur 003
+deconnexion;10.14.252.114;TR;R90;test test;;oxygen;2021-11-04;03:08 pm;recept;Allée 801 profondeur 003
+lenteur;10.14.250.211;TR;PGT2;test test;;oxygen;2021-11-05;11:06 am;chargement;Allée 801 profondeur 003
+deconnexion;10.14.252.114;TR;R90;test test;;oxygen;2021-11-05;02:24 pm;prep+;Allée 801 profondeur 002
+deconnexion;10.14.252.114;TR;R90;test test;;oxygen;2021-11-05;02:25 pm;recept;Allée 801 profondeur 003

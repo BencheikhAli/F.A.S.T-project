@@ -1,0 +1,361 @@
+/*SOMAIRE*/
+/*********************** NAV ************************/
+/*********************** BODY ************************/
+/*********************** FOOTER ************************/
+/*********************** PARTIE MOBILE ************************/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+/* enlver le margin et le pading pour tout la page */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:"PT sans Narrow", sans-serif;
+}
+/*********************** NAV ************************/
+
+header {
+    display: flex;
+}
+
+.logo {
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.title-site {
+    margin-top: 30px;
+    font-size: 40px;
+}
+/*********************** BODY ************************/
+.title-page {
+    font-size: 60px;
+    text-align: center;
+}
+
+.log-form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+.main a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
+.main a:hover,
+.btn a:hover,
+.btn-connect-one a,
+.btn-connect-two a{
+    text-decoration: none;
+    color: white;
+}
+
+.main div {
+    padding: 90px;
+    margin: 0 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-connect-one {
+    background-color: #4a8bec;
+    border-radius: 20px 20px 20px 20px;
+}
+.btn-connect-two {
+    background-color: #040176;
+    border-radius: 20px 20px 20px 20px;
+}
+.btn-connect-one:hover{
+    background-color: #719ee2;
+}
+.btn-connect-two:hover{
+    background-color: #171399;
+}
+
+
+.form-container {
+    padding: 40px;
+    margin: auto 20%;
+    background-color: #2D78E9;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 5px 8px rgb(43, 42, 42);
+}
+.error{
+    padding: 25px;
+    background-color: #DC3545;
+    color: white;
+    font-size: 25px;
+}
+.logout{
+    padding: 25px;
+    background-color: #198754;
+    color: white;
+    font-size: 25px;
+}
+.space{
+    display: block;
+    height: 15px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+    width: 90%;
+    padding: 15px;
+    display: block;
+    font-size: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+form input[type="text"]::placeholder,
+form input[type="password"]::placeholder{
+    font-size: 25px;
+    color: grey;
+}
+
+form input[type="submit"],
+.btn {
+    display: block;
+    height: 50px;
+    width: 150px;
+    background-color: #040176;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 17px;
+    font-size: 25px;
+    cursor:pointer;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #040176;
+    transition: background-color 0.3s;
+}
+.log-form button{
+    display: block;
+    height: 50px;
+    width: 250px;
+    background-color: #040176;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 17px;
+    font-size: 25px;
+    cursor:pointer;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #040176;
+    transition: background-color 0.3s;
+}
+.btn-manager{
+    background-color: #4a8bec;
+}
+.btn-manager:hover{
+    background-color: #719ee2;
+}
+.btn-carriste:hover{
+    background-color: #171399;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.submit-btn {
+    margin: auto 38%;
+    margin-bottom: 10px;
+    color: white;
+    background-color:#040176;
+}
+.submit-btn:hover {
+    background-color:#4642c7;
+    transition: 0.2s;
+}
+.break {
+    display: block;
+    height: 50px;
+}
+
+.guess-link {
+    text-align: center;
+    font-size: 25px;
+}
+
+.guess-link a {
+    color: white;
+    text-decoration: none;
+}
+.guess-link a:hover{
+    color: wheat;
+    transition: all 0.5s ease;
+}
+/*********************** FOOTER ************************/
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    position: absolute;
+    background-color: #040176;
+    width: 96.8%;
+}
+
+.fm-logo {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.socialnw-logo {
+    margin-right: 70px;
+    margin-top: 2px;
+    font-size: 40px;
+    color: white;
+}
+footer .socialnw a i img{
+    filter:  brightness(0) invert(1);
+    height: 50px;
+}
+/*********************** PARTIE MOBILE ************************/
+@media screen and (max-width: 850px){
+    .dropdown{
+        display: none;
+    }
+    /* logo-container */
+    .logo{
+        height: 70px;
+    }
+    .title-site{
+        font-size: 25px;
+    }
+    /* footer */
+    footer{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #040176;
+        width: 96.8%;
+    }
+    .fm-logo{
+        width: 100px;
+        border-radius: 5px;
+    }
+    .socialnw-logo {
+        margin-right: 30px;
+        font-size: 30px;
+    }
+    footer .socialnw a i img{
+        filter:  brightness(0) invert(1);
+        height: 30px;
+    }
+    .title-page{
+        font-size: 30px;
+    }
+    /* les input*/
+    .form-container {
+        padding: 30px;
+        margin: auto 10%;
+        border-radius: 10px;
+    }
+    form input[type="text"],
+    form input[type="password"],
+    .form-container .log-form input{
+        width: 100%;
+        padding: 10px;
+        font-size: 17px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2%;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+    form input[type="text"]::placeholder,
+    form input[type="password"]::placeholder{
+        font-size: 17px;
+        color: black;
+    }
+    .form-container .log-form input{
+        font-size: 17px;
+    }
+    .guess-link {
+        font-size: 20px;
+    }
+    form input[type="submit"],
+    .form-container .log-form input[type="submit"],
+    .form-container .log-form button,
+    .btn-manager,
+    .submit-email{
+        height: 40px;
+        width: 130px;
+        font-size: 17px;
+        border-radius: 5px;
+        margin-bottom: 0px;
+        color: white;
+    }
+    .form-container .log-form button{
+        font-size: 14px;
+    }
+    .error,
+    .logout{
+        padding: 20px;
+        font-size: 17px;
+    }
+    .main a {
+        font-size: 30px;
+    }
+    .main div {
+        padding: 60px;
+        margin: 0 30px;
+        transition: all 0.3s ease;
+    }
+    .break {
+        display: block;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 490px){
+    form input[type="submit"],
+    .btn-manager{
+        height: 30px;
+        width: 100px;
+        font-size: 17px;
+        border-radius: 5px;
+        margin-bottom: 0px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+    }
+    .main a{
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    footer{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        background-color: #040176;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+    }
+}

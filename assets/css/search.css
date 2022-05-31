@@ -1,0 +1,166 @@
+/*SOMAIRE*/
+/*********************** NAV ************************/
+/*********************** BODY ************************/
+/*********************** PARTIE MOBILE ************************/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+/* enlver le margin et le pading pour tout la page */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:"PT sans Narrow", sans-serif;
+    outline: none;
+}
+/*********************** NAV ************************/
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+h1{
+    text-align: center;
+}
+.logo-container {
+    display: flex;
+}
+.logo {
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.title-site {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.title-page {
+    margin-bottom: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+/*********************** BODY ************************/
+.img-error{
+    height: 350px;
+}
+.user-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.user {
+    padding: 20px;
+    font-size: 22px;
+    width: 500px;
+    border: 1px solid transparent;
+    background: #040176;
+    border-radius: 15px;
+    color: black;
+}
+
+.user-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background: white;
+}
+.div-error{
+    display: flex;
+    justify-content: center;
+}
+.space{
+    display: block;
+    height: 20px;
+}
+.hidden-div {
+    display: none;
+    justify-content: space-around;
+}
+
+.delete {
+    margin: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: white;
+    background: red;
+}
+
+.question {
+    display: none;
+    text-align: center;
+    color: white;
+}
+.delbtn {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: white;
+    background: red;
+}
+
+.cancel {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: white;
+    background: #4a8bec;
+}
+/*********************** PARTIE MOBILE ************************/
+  @media screen and (max-width: 850px){
+    .dropdown{
+        display: none;
+    }
+    /* logo-container */
+    .logo-container .logo{
+        height: 70px;
+    }
+    .logo-container .title-site{
+        font-size: 25px;
+    }
+    /* footer */
+    .fm-logo{
+        width: 100px;
+        border-radius: 5px;
+    }
+    .socialnw-logo {
+        margin-right: 30px;
+        font-size: 30px;
+    }
+    footer .socialnw a i img{
+        filter:  brightness(0) invert(1);
+        height: 30px;
+    }
+    .user {
+        padding: 20px;
+        font-size: 22px;
+        width: 500px;
+        border: 1px solid transparent;
+        background: #040176;
+        border-radius: 15px;
+        color: black;
+    }
+    .user-item {
+        padding: 15px;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        background: white;
+    }
+}

@@ -1,0 +1,604 @@
+/*SOMAIRE*/
+/*********************** NAV ************************/
+/*********************** BODY ************************/
+/*********************** FOOTER ************************/
+/*********************** LE MENU DEROULANT ************************/
+/*********************** PARTIE MOBILE ************************/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+/* enlver le margin et le pading pour tout la page */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:"PT sans Narrow", sans-serif;
+    outline: none;
+    user-select: none;
+}
+/*********************** NAV ************************/
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.logo-container {
+    display: flex;
+}
+.logo {
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.title-site {
+    margin-top: 30px;
+    font-size: 40px;
+}
+.hide-page{
+    display: none;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    margin-top: 40px;
+}
+
+.account-logo {
+    margin-right: 5px;
+    font-size: 40px;
+    color: black;
+}
+
+.account {
+    margin-top: 8px;
+    margin-right: 8px;
+    font-size: 25px;
+    color: black;
+}
+
+.account a {
+    text-decoration: none;
+    color: black;
+}
+/*********************** BODY ************************/
+.title-page {
+    margin-bottom: 50px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.report {
+    margin-bottom:50px;
+    text-align: center;
+    font-size: 40px;
+    color: red;
+}
+
+
+.form-container {
+    margin: auto 20%;
+    margin-bottom: 50px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    background: #2D78E9;
+    box-shadow: 0 0 10px #040176;
+}
+.error{
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #DC3545;
+    color: white;
+    font-size: 25px;
+}
+.error p{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.add-true{
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #198754;
+    color: white;
+    font-size: 25px;
+}
+.add-true p{
+    font-size: 25px;
+    color: #ffffff;
+}
+.add-true p a{
+    color: white;
+}
+
+form {
+    margin: auto 5%;
+    padding: 20px;
+    background: #2D78E9;
+}
+
+.q {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.q h3 {
+    margin :0 0 30px 0;
+    font-size: 30px;
+    color: white;
+}
+
+.radio-buttons {
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.custom-radio input {
+    display: none;
+}
+
+.radio-btn {
+    margin: 10px;
+    width: 150px;
+    height: 160px;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #040176;
+    cursor: pointer;
+}
+
+.radio-btn>i{
+    color: #2D78E9;
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(4);
+    border-radius: 50px;
+    padding: 3px;
+    transition: 0.2s;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.radio-btn .problems-icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.radio-btn .problems-icon div{
+    display: flex;
+}
+.radio-btn .problems-icon i {
+    color: white;
+    line-height: 80px;
+    font-size: 35px;
+}
+.radio-btn .problems-icon i img{
+    height: 50px;
+    filter: invert(0) brightness(1);
+}
+
+.radio-btn .problems-icon h3 {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: -15px;
+}
+
+.custom-radio input:checked+.radio-btn{
+    border: 3px solid white;
+}
+
+.custom-radio input:checked+ .radio-btn>i.check-svg {
+    filter:  brightness(0) invert(1);
+    width: 40px;
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.localisation,
+.tr-te,
+.ip_machine {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    font-size: 25px;
+    width: 20em;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #040176;
+}
+
+.description {
+    font-size: 25px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+    width: 20em;
+    height: 100px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #040176;
+}
+
+.p-j-title {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.p-j {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    box-shadow: 0 0 20px #040176;
+}
+
+.locdescrpj {
+    margin-bottom: 50px;
+}
+
+.sign-btn {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+    padding: 8px 30px;
+    font-size: 25px;
+    border : 1px solid transparent;
+    border-radius: 40px; 
+    color: white;
+    background: #040176;
+    box-shadow: 0 0 20px #040176;
+    cursor: pointer;
+    transition: background 0.3s ease ;
+}
+.sign-btn:hover{
+    background: #171399;
+}
+
+.other-div {
+    display: none;
+    overflow: hidden;
+}
+
+.other-input {
+    margin-left: 37%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 50%;
+    margin-right: 0;
+}
+
+.ptextarea, 
+.ptextarea #characters{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.cancel-btn {
+    padding: 5px;
+    margin: 2px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background: #040176;
+}
+
+.socialnw-logo:hover {
+    color: rgb(122, 133, 141);
+    transition: 0.2s;
+}
+/*********************** FOOTER ************************/
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color:#040176;
+}
+
+
+.fm-logo {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.socialnw-logo {
+    margin-right: 70px;
+    margin-top: 2px;
+    font-size: 40px;
+    color: white;
+}
+footer .socialnw a i img{
+    filter:  brightness(0) invert(1);
+    height: 50px;
+}
+/*********************** LE MENU DEROULANT ************************/
+.dropdown {
+    position: relative;
+    width: 250px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background: white;
+    /* pas visible avec le bg*/
+    box-shadow: 20px 20px 60px #d0d0d0,-20px -20px 60px #ffffff;
+    /*effet Neomorphism*/
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+
+.dropdown:active {
+    background: white;
+    box-shadow: inset 7px 7px 14px #cccdd1, -7px -7px 14px #ffffff;
+}
+.dropdown:hover{
+    background: rgb(240, 240, 240);
+}
+
+.dropdown input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border: none;
+    outline: none;
+    background: none;
+    color: #37373d;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.dropdown input:focus {
+    outline: none;
+    border: none;
+}
+
+.dropdown i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #37373d;
+}
+
+.dropdown.show i {
+    transform: translateY(-50%) rotate(180deg);
+    transition: all 500ms ease-in-out;
+}
+
+.options {
+    position: absolute;
+    top: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background: white;
+    /* pas visible avec le bg*/
+    box-shadow: 20px 20px 60px #d0d0d0,-20px -20px 60px #ffffff;
+    /*effet Neomorphism*/
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.dropdown.show .options {
+    visibility: visible;
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+}
+
+.options li {
+    padding: 15px;
+    position: relative;
+    list-style-type: none;
+    color: #37373d;
+    transition: all 500ms ease-in-out;
+}
+
+.options li:last-child{
+    background-color: #DC3545;
+}
+
+.options li:last-child:hover{
+    background-color: #e9394b;
+}
+
+.options li:last-child a,
+.options li:last-child a i{
+    color: white;
+}
+
+.options li a {
+    text-decoration: none;
+    color: #37373d;
+}
+
+.options li:first-child {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.options li:last-child {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.options li:hover {
+    background: rgb(0,0,0,.1);
+}
+
+.space{
+    display: block;
+    height: 20px;
+}
+/*********************** PARTIE MOBILE ************************/
+@media screen and (max-width: 850px){
+    .dropdown{
+        display: none;
+    }
+    /* logo-container */
+    .logo-container .logo{
+        height: 70px;
+    }
+    .logo-container .title-site{
+        font-size: 25px;
+    }
+    .report {
+        margin-bottom:25px;
+        font-size: 27px;
+    }
+    .title-page {
+        margin-bottom: 25px;
+        font-size: 30px;
+    }
+    /* footer */
+    .fm-logo{
+        width: 100px;
+        border-radius: 5px;
+    }
+    .socialnw-logo {
+        margin-right: 30px;
+        font-size: 30px;
+    }
+    footer .socialnw a i img{
+        filter:  brightness(0) invert(1);
+        height: 30px;
+    }
+    /* input */
+    .form-container {
+        margin: auto 10%;
+        border-radius: 14px;
+        overflow: hidden;
+    }
+    .q h3 {
+        font-size: 25px;
+    }
+    
+    .radio-btn {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+    }
+
+    .radio-btn>i{
+        font-size: 10px;
+        border-radius: 25px;
+        padding: 3px;
+    }
+
+    .radio-btn .problems-icon {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .radio-btn .problems-icon i {
+        color: white;
+        line-height: 80px;
+        font-size: 25px;
+    }
+
+    .radio-btn .problems-icon h3 {
+        font-size: 11px;
+    }
+    .radio-btn .problems-icon div{
+        display: flex;
+        justify-content: space-around;
+    }
+    /*taille des icons*/
+    .radio-btn .problems-icon i img{
+        height: 27px;
+    }
+    .other-input {
+        margin-left: 50%;
+        width: 100%;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+
+    .localisation,
+    .tr-te,
+    .ip_machine {
+        font-size: 20px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .description {
+        font-size: 20px;
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+    }
+
+    .sign-btn{
+        height: 40px;
+        width: 130px;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    .error{
+        padding: 20px;
+        font-size: 17px;
+    }
+    .error p,
+    .add-true p,
+    .ptextarea,
+    .ptextarea #characters,
+    .p-j-title{
+        font-size: 17px;
+    }
+
+}
+@media screen and (max-width: 500px){
+    .radio-buttons {
+        width: 104%;
+    }
+}
+
+@media screen and (max-width: 490px){
+    
+    .form-container {
+        margin: auto 5px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .radio-buttons {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .radio-btn {
+        height: 90px;
+        width: 25%;
+    }
+    form {
+        margin: auto 0%;
+        padding: 0;
+        user-select: none;
+    }
+}

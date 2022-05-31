@@ -1,0 +1,1019 @@
+/*SOMAIRE*/
+/*********************** NAV ************************/
+/*********************** BODY ************************/
+/*********************** FOOTER ************************/
+/*********************** PAGE DE DETAILS ************************/
+/*********************** PAGE DES DIAGRAMMES ************************/
+/*********************** TABLE DANS LA PAGE REPORTS ************************/
+/*********************** LE MENU DEROULANT ************************/
+/*********************** TABLE DANS LA PAGE DES DIAGRAMMES ************************/
+/*********************** BOITE MODAL POUR L'EXPORTE DE TABLEU ************************/
+/*********************** LES BUTTON DES FILTRE ************************/
+/*********************** PARTIE MOBILE ************************/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+/* enlver le margin et le pading pour tout la page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"PT sans Narrow", sans-serif;
+}
+/*********************** NAV ************************/
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.invite-header {
+    display: flex;
+    justify-content: left;
+}
+.logo-container {
+    display: flex;
+}
+
+.logo {
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.title-site {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.logout_btn a,
+.back a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+}
+.logout_btn a{
+    color: red;
+}
+.logout_btn,
+.back{
+    margin-top: 38px;
+    margin-right: 20px;
+}
+/*********************** BODY ************************/
+h2{
+    text-align: center;
+    font-size: 45px
+}
+.logo{
+    height: 100px;
+}
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.box_connect,
+.my_reported_problems{
+    background-color: #2D78E9;
+    height: 100%;
+    width: 65%;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #1e1e1f;
+}
+
+.first_name,
+.last_name,
+.secteur{
+    width: 90%;
+    padding: 15px;
+    display: block;
+    font-size: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.first_name::placeholder,
+.last_name::placeholder{
+    font-size: 25px;
+}
+.btn,
+.btn-success,
+.btn-danger{
+    display: block;
+    height: 50px;
+    width: 150px;
+    background-color: #040176;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 17px;
+    font-size: 25px;
+    cursor:pointer;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #040176;
+    transition: background-color 0.3s;
+}
+
+.status-vert{
+    background-color: #1AF257;
+}
+.status-rouge{
+    background-color: #DC3545;
+}
+.status-rouge .problem_box input,
+.status-rouge .problem_box textarea,
+.status-rouge .problem_box img,
+.status-vert .problem_box input,
+.status-vert .problem_box textarea,
+.status-vert .problem_box img{
+    box-shadow: none;
+}
+
+.btn-success{
+    background-color: #04AA6D;
+    box-shadow: 0 0 10px #138333;
+}
+.btn-success:hover{
+    background-color: #138333;
+}
+.btn-danger{
+    background-color: #DC3545;
+    box-shadow: 0 0 10px #a02733;
+}
+.btn-danger:hover{
+    background-color: #a02733;
+}
+.btn-table{
+    display: block;
+    height: 40px;
+    width: 80px;
+    background-color: #040176;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 17px;
+    font-size: 20px;
+    cursor:pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.btn-table:hover{
+    background-color: #140fa5;
+}
+.btns-export{
+    display: flex;
+}
+.manager-reports_btnPlus{
+    background-color: #2D78E9;
+    box-shadow: none;
+}
+.btn a,
+.btn-table a,
+.btn-danger a,
+.btn-success a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.btn_more{
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 17px;
+    font-size: 25px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background-color: #040176;
+    box-shadow: 0 0 10px #08081b;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover,
+.btn_more:hover{
+    background-color: #171399;
+}
+p a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+p a:hover{
+    color:skyblue;
+}
+p{
+    text-align: center;
+}
+.space{
+    display: block;
+    height: 40px;
+}
+.big_space{
+    display: block;
+    height: 70px;
+}
+/*********************** FOOTER ************************/
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color:#040176;
+}
+.fm-logo {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.socialnw-logo {
+    margin-right: 70px;
+    margin-top: 2px;
+    font-size: 40px;
+    color: white;
+}
+
+footer .socialnw a i img{
+    filter:  brightness(0) invert(1);
+    height: 50px;
+}
+.personnelle_info{
+    margin-left: 5%;
+    font-size: 25px;
+    padding: 10px;
+}
+.report_title{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(230, 69, 69);
+}
+
+.my-reports2 {
+    margin-bottom: 274px;
+    text-align: center;
+    font-size: 50px;
+    color: #e63244;
+}
+
+.my_reported_problems .problem_box input,
+.my_reported_problems .problem_box textarea{
+    width: 70%;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    display: block;
+    font-size: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #040176;
+}
+.my_reported_problems .problem_box input[type="image"] 
+{
+    width: 70%;
+    height: 300px;
+    border-radius: 0%;
+}
+.my_reported_problems form div,
+.btn_problems_box{
+    display: flex;
+}
+
+.status-vert{
+    background-color: #1AF257;
+}
+.status-vert .problem_box input,
+.status-vert .problem_box textarea{
+    box-shadow: none;
+}
+.status-vert div button{
+    background-color: #42d16b;
+    box-shadow: none;
+}
+.status-vert div button:hover{
+    background-color: #138333;
+}
+.status-rouge{
+    background-color: #DC3545;
+}
+.status-rouge .problem_box input,
+.status-rouge .problem_box textarea{
+    box-shadow: none;
+}
+.status-rouge div button{
+    background-color: #e06672;
+    box-shadow: none;
+}
+.status-rouge div button:hover{
+    background-color: #a02733;
+}
+/*********************** PAGE DE DETAILS ************************/
+.detail{
+    display: block;
+    width: 65%;
+    border-radius: 20px;
+}
+.detail .problem_box input,
+.detail .problem_box textarea{
+    font-size: 24px;
+}
+
+.detail_descreption{
+    color: red;
+}
+.image-detail-container{
+    background-position: center;
+}
+.detail_image{
+    height: 200px;
+    width: 70%;
+    background: center;
+    cursor: pointer;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #040176;
+    transform: rotate(0deg);
+    transition: opacity 0.4s ease;
+}
+.detail_image:hover{
+    opacity: 0.8;
+}
+
+.full-screen{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border: 5px solid black;
+    overflow: hidden;
+    z-index: 9998;
+    margin: 0px;
+    cursor: crosshair;
+    transition: all 0.5s ease;
+}
+.btns {
+    display: none;
+    margin: 0 5px;
+    justify-content: center;
+    z-index: 9999;
+    overflow: hidden;
+    position: fixed;
+    margin-left: 22%;
+    top: 5%;
+}
+.show-btns{
+    display: flex;
+}
+
+.btns button {
+    padding: 2px 10px;
+    outline: none;
+    font-size: 25px;
+    color: white;
+    background-color: #040176;
+    border: none;
+    z-index: 9999;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btns button:hover{
+    background-color: darksalmon;
+}
+.btns button:nth-child(1){
+    border-radius: 0 0 0 10px;
+    background-color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+.btns button:last-child{
+    border-radius: 0 0 10px 0;
+}
+.details-btns{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*********************** PAGE DES DIAGRAMMES ************************/
+.pie_box{
+    display: flex;
+    justify-content: space-around;
+}
+.pie_title{
+    font-size: 25px;
+    color: red;
+    text-align: center;
+}
+
+.pie_title span{
+    font-size: 15px;
+}
+#labels-location,
+#score-location,
+#labels-status,
+#score-status,
+#labels-probleme,
+#score-probleme,
+#labels-profondeur,
+#score-profondeur{
+    display: none;
+}
+.chart_probleme,
+.chart_status{
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.chart_location{
+    height: 500px;
+    width: 800px;
+    margin: 0 auto;
+}
+/*********************** TABLE DANS LA PAGE REPORTS ************************/
+
+.manager-reports {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(7, 42, 199);
+}
+.manager-reports th,
+.manager-reports td {
+    width: calc(100%/7);
+    border: 1px solid rgb(7, 42, 199);
+    padding: 8px;
+}
+.manager-reports tr td:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+}
+.manager-reports tr td{
+    text-align: center;
+}
+.manager-reports tr td i img,
+button a i img,
+button i img{
+    height: 40px;
+}
+.manager-reports th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #2D78E9;
+    color: white;
+}
+.manager-reports td.status-blue{
+    color: white;
+    background-color: #2D78E9;
+}
+.manager-reports td.status-vert{
+    color: white;
+    background-color: #1AF257;
+}
+.manager-reports td.status-rouge{
+    color: white;
+    background-color: #DC3545;
+}
+
+.demande-effect {
+    color: red;
+}
+/*********************** LE MENU DEROULANT ************************/
+.dropdown {
+    position: relative;
+    width: 250px;
+    height: 60px;
+    margin-top: 38px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background: white;
+    /* pas visible avec le bg*/
+    box-shadow: 20px 20px 60px #d0d0d0,-20px -20px 60px #ffffff;
+    /*effet Neomorphism*/
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+.dropdown:active {
+    background: white;
+    box-shadow: inset 7px 7px 14px #cccdd1, -7px -7px 14px #ffffff;
+}
+.dropdown:hover{
+    background: rgb(240, 240, 240);
+}
+.dropdown input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border: none;
+    outline: none;
+    background: none;
+    color: #37373d;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.dropdown input:focus {
+    outline: none;
+    border: none;
+}
+
+.dropdown i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #37373d;
+}
+
+.dropdown.show i {
+    transform: translateY(-50%) rotate(180deg);
+    transition: all 500ms ease-in-out;
+}
+
+.options {
+    position: absolute;
+    top: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background: white;
+    /* pas visible avec le bg*/
+    box-shadow: 20px 20px 60px #d0d0d0,-20px -20px 60px #ffffff;
+    /*effet Neomorphism*/
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+
+.dropdown.show .options {
+    visibility: visible;
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+}
+
+.options li {
+    padding: 15px;
+    position: relative;
+    list-style-type: none;
+    color: #37373d;
+    transition: all 500ms ease-in-out;
+}
+
+.options li:last-child{
+    background-color: #DC3545;
+}
+.options li:last-child:hover{
+    background-color: #e9394b;
+}
+.options li:last-child a,
+.options li:last-child a i{
+    color: white;
+}
+
+.options li a {
+    text-decoration: none;
+    color: #37373d;
+}
+
+.options li:first-child {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.options li:last-child {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.options li:hover {
+    background: rgb(0,0,0,.1);
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*********************** LA TABLE DANS LA PAGE DES DIAGRAMMES (pie) ************************/
+#dataTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+#dataTable td,
+#dataTable th {
+    border: 1px solid #25966c;
+    padding: 8px;
+}
+#dataTable td {
+    text-align: center;
+}
+#dataTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+}
+.danger{
+    width: 270px;
+    background-color: #DC3545;
+    box-shadow: none;
+}
+.danger:hover{
+    background-color: #e06672;
+}
+/*********************** BOITE MODAL POUR L'EXPORTE DE TABLEU ************************/
+.modal {
+    display: none; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal:target {
+    display: table;
+    position: absolute;
+}
+
+.modal-dialog {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal-dialog .modal-content {
+    margin: auto;
+    background-color: #f3f3f3;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    border: 1px #777 solid;
+    border-radius: 10px;
+    text-align: justify;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: slideDownFadeIN;
+    animation-duration: 0.5s;
+}
+button .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 40%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  button .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  button:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.closebtn {
+    text-decoration: none;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container {
+    background-color: #5cb85c;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+    padding: 2px 16px;
+    height: 100px;
+}
+.container div{
+    display: flex;
+    justify-content: space-around;
+}
+.container div.link-export{
+    display: none;
+}
+.container div input{
+    width: 50%;
+}
+.container div h4{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+/*********************** LES BUTTON DES FILTRE ************************/
+.filtre-btn {
+    margin: 15px;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #040176;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+}
+.filtre-btn:hover{
+    background-color: #2c26c5;
+}
+.btn-export{
+    background-color: #04AA6D;
+    box-shadow: none;
+}
+.btn-export:hover{
+    background-color: #10c482;
+}
+#filtre-form {
+    display: none;
+}
+
+.form-input {
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 20px;
+    border: 3px solid #2D78E9;
+    border-radius: 5px;
+    outline: none;
+}
+
+.filtre-form-btn {
+    padding: 8px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #2D78E9;
+    color: white;
+    cursor: pointer;
+}
+.filtre-form-btn:hover{
+    background-color: #4984dd;
+}
+/*********************** PARTIE MOBILE************************/
+@media screen and (max-width: 850px){
+    .dropdown{
+        display: none;
+    }
+    /* logo-container */
+    .invite-header .logo{
+        height: 70px;
+    }
+    .invite-header .title-site{
+        font-size: 25px;
+    }
+    /* logo-container */
+    .logo-container .logo{
+        height: 70px;
+    }
+    .logo-container .title-site{
+        font-size: 25px;
+    }
+    /*my-reports tite*/
+    .my-reports2 {
+        font-size: 25px;
+    }
+    /*h2*/
+    h2{
+        font-size: 30px
+    }
+    /* footer */
+    .fm-logo{
+        width: 100px;
+        border-radius: 5px;
+    }
+    .socialnw-logo {
+        margin-right: 30px;
+        font-size: 30px;
+    }
+    footer .socialnw a i img{
+        filter:  brightness(0) invert(1);
+        height: 30px;
+    }
+    .first_name,
+    .last_name{
+        width: 90%;
+        padding: 10px;
+        display: block;
+        font-size: 17px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2%;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+    .secteur{
+        width: 90%;
+        padding: 10px;
+        display: block;
+        font-size: 17px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2%;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+    .last_name::placeholder,
+    .first_name::placeholder{
+        font-size: 17px;
+        color: grey;
+    }
+    .btn{
+        height: 40px;
+        width: 120px;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    p a{
+        font-size: 20px;
+    }
+    .box_connect{
+        height: 100%;
+        width: 80%;
+        padding: 18px;
+        border-radius: 10px;
+    }
+    .box_connect form .btn{
+        height: 40px;
+        width: 130px;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    .report_title{
+        font-size: 25px;
+    }
+    
+    .my-reports2 {
+        font-size: 30px;
+    }
+    .my_reported_problems form .problem_box input{
+        width: 80%;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    .my_reported_problems form div button{
+        height: 40px;
+        width: 130px;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    .problem_box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* graph */
+    .pie_box{
+        flex-direction: column;
+    }
+    .detail{
+        width: 90%;
+        border-radius: 5px;
+    }
+    .detail .problem_box input,
+    .detail .problem_box textarea{
+        width: 90%;
+        font-size: 17px;
+    }
+    #detail_image{
+        border-radius: 5px;
+        width: 100%;
+    }
+    .details-btns{
+        display: flex;
+    }
+    .details-btns button{
+        height: 40px;
+        width: 120px;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    /*chart*/
+    .chart_probleme,
+    .chart_status{
+        height: 350px;
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .chart_location{
+        height: 500px;
+        width: 450px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 640px){
+    table{
+        width: 100%;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        font-size: 19px;
+    }
+    table tbody tr td,
+    #dataTable tbody tr td:nth-child(1),
+    #dataTable tbody tr td:last-child,
+    table tbody tr td p,
+    .manager-reports tr td:nth-child(3),
+    .manager-reports tr td:nth-child(4),
+    .manager-reports tr td:nth-child(5){
+        text-align: right;
+    }
+    .manager-reports th,
+    .manager-reports td {
+        width: auto;
+    }
+  
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+  
+    tr { 
+        border: 1px solid #ccc;
+    }
+  
+    td {
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+    }
+
+    td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .my_reported_problems form div{
+        display: flex;
+        flex-direction: column;
+    }
+    .manager-reports tr:nth-child(even) {
+        background-color: #2D78E9;
+        color: white;
+    }
+    .btn-table{
+        height: 40px;
+        width: 100px;
+        margin-top: 5px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    #dataTable tr:nth-child(even){
+        background-color: #0bca84;
+        color: white;
+    }
+}

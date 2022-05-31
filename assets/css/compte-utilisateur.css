@@ -1,0 +1,669 @@
+/*SOMAIRE*/
+/*********************** NAV ************************/
+/*********************** BODY ************************/
+/*********************** FOOTER ************************/
+/*********************** BODY ************************/
+/*********************** LE MENU DEROULANT ************************/
+/*********************** PARTIE MOBILE ************************/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+/* enlver le margin et le pading pour tout la page */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:"PT sans Narrow", sans-serif;
+}
+/*********************** NAV ************************/
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.hide-page{
+    display: none;
+    overflow: hidden;
+}
+
+.logo-container {
+    display: flex;
+}
+.logo {
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.title-site {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+nav {
+    display: flex;
+    margin-top: 40px;
+}
+
+.logout-logo {
+    margin-right: 5px;
+    font-size: 35px;
+    color: red;
+}
+
+.logout {
+    margin-top: 8px;
+    margin-right: 8px;
+    font-size: 20px;
+    color: red;
+}
+
+.logout a {
+    text-decoration: none;
+    color: red;
+}
+
+.title-page {
+    margin-bottom: 50px;
+    font-size: 60px;
+    text-align: center;
+}
+/*********************** BODY ************************/
+.info-container h3 {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+    font-size: 35px;
+}
+
+.info-container {
+    margin-bottom: 100px;
+}
+.big_space{
+    display: block;
+    height: 70px;
+}
+.my-reports {
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 50px;
+    color: red;
+}
+.my-reports2 {
+    margin-bottom: 274px;
+    text-align: center;
+    font-size: 50px;
+    color: red;
+}
+
+.h1-myreports{
+    text-align: center;
+    font-size: 50px;
+    color: red   
+}
+.h2-myreports{
+    text-align: center;
+    font-size: 25px;
+    color: red
+}
+/*********************** FOOTER ************************/
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color:#040176;
+}
+
+
+.fm-logo {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.socialnw-logo {
+    margin-right: 70px;
+    margin-top: 2px;
+    font-size: 40px;
+    color: white;
+}
+
+footer .socialnw a i img{
+    filter:  brightness(0) invert(1);
+    height: 50px;
+}
+/*********************** BODY ************************/
+.report {
+    margin-left: 50%;
+    margin-bottom: 40px;
+    transform: translateX(-50%);
+    padding: 15px;
+    background: #2D78E9;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #1e1e1f;
+}
+.report .date{
+    width: 230px;
+}
+
+.report input {
+    margin: 15px;
+    margin-left: 1em;
+    padding: 10px;
+    font-size: 25px;
+    background: white;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #040176;
+}
+.report #localisation{
+    width: 250px;
+}
+.report-btns{
+    display: flex;
+}
+.report-btns .report-btns_btn{
+    display: block;
+    height: 50px;
+    width: 190px;
+    background-color: #040176;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 17px;
+    font-size: 25px;
+    cursor:pointer;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #040176;
+    transition: background-color 0.3s;
+}
+.report-btns .report-btns_btn:hover{
+    background-color: #171399;
+}
+.report-btns .report-btns_btn a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.ask {
+    margin-left: 50%;
+    padding: 5px;
+    transform: translateX(-50%);
+    font-size: 25px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background: #040176;
+    box-shadow: 0 0 20px #040176;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.ask:hover{
+    background-color: #100c8a;
+}
+.ask a{
+    text-decoration: none;
+    color: white;
+}
+
+.exp-date{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#finished-report {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    background: #11e940;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #1e1e1f;
+  
+}
+
+#finished-report input {
+    margin: 15px;
+    margin-left: 1em;
+    padding: 10px;
+    font-size: 25px;
+    background: white;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #035510;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.btn {
+    display: none;
+    padding: 5px;
+    font-size: 25px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background: #040176;
+    box-shadow: 0 0 10px #08081b;
+}
+#form_password_change input[type="submit"],
+#form_password_change button {
+    margin-left: 50%;
+    padding: 10px;
+    transform: translateX(-50%);
+    font-size: 25px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background: #2D78E9;
+    cursor: pointer;
+}
+#form_password_change{
+    display: none;
+}
+
+/*********************** LE MENU DEROULANT ************************/
+.dropdown {
+    position: relative;
+    width: 250px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background: white;
+    /* pas visible avec le bg*/
+    box-shadow: 20px 20px 60px #d0d0d0,-20px -20px 60px #ffffff;
+    /*effet Neomorphism*/
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+
+.dropdown:active {
+    background: white;
+    box-shadow: inset 7px 7px 14px #cccdd1, -7px -7px 14px #ffffff;
+}
+
+.dropdown:hover{
+    background: rgb(240, 240, 240);
+}
+
+.dropdown input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border: none;
+    outline: none;
+    background: none;
+    color: #37373d;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.dropdown input:focus {
+    outline: none;
+    border: none;
+}
+
+.dropdown i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #37373d;
+}
+
+.dropdown.show i {
+    transform: translateY(-50%) rotate(180deg);
+    transition: all 500ms ease-in-out;
+}
+
+.options {
+    position: absolute;
+    top: 60px;
+    width: 250px;
+    border-radius: 30px;
+    background: white;
+    /* pas visible avec le bg*/
+    box-shadow: 20px 20px 60px #d0d0d0,-20px -20px 60px #ffffff;
+    /*effet Neomorphism*/
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+
+.dropdown.show .options {
+    visibility: visible;
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+}
+
+.options li {
+    padding: 15px;
+    position: relative;
+    list-style-type: none;
+    color: #37373d;
+    transition: all 500ms ease-in-out;
+}
+
+.options li a {
+    text-decoration: none;
+    color: #37373d;
+}
+
+.options li:first-child {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.options li:last-child {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.options li:hover {
+    background: rgb(0,0,0,.1);
+}
+
+.options li:last-child{
+    background-color: #DC3545;
+}
+
+.options li:last-child:hover{
+    background-color: #e9394b;
+}
+
+.options li:last-child a,
+.options li:last-child a i{
+    color: white;
+}
+
+.informations {
+    margin: auto 20%;
+    margin-bottom: 100px;
+    padding: 40px;
+    background: #040176;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #08081b;
+}
+.infos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50%;
+    margin-bottom: 30px;
+    height: 50px;
+    padding: 5px;
+    transform: translateX(-50%);
+    background: white;
+    font-size: 30px;
+    width: 650px;
+    border: 1px solid transparent;
+    border-radius: 13px;
+    box-shadow: 0 0 15px #4a8bec;
+    overflow: hidden;
+    transition: all 0.4S ease;
+}
+.infos input,
+#select-service {
+    box-shadow: none;
+    font-size: 25px;
+    border: none;
+    width: 500px;
+    background: transparent;
+    height: 40px;
+    outline: none;
+    overflow: hidden;
+}
+
+#select-service{
+    display: none;
+}
+
+.edit-btn {
+    margin-left: 50%;
+    padding: 10px;
+    transform: translateX(-50%);
+    font-size: 25px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background: #2D78E9;
+    cursor: pointer;
+}
+
+.btn_more{
+    display: block;
+    height: 50px;
+    width: 150px;
+    background-color: #040176;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 17px;
+    font-size: 25px;
+    cursor:pointer;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #040176;
+    transition: background-color 0.3s;
+}
+.btn_more:hover{
+    background-color: #171399;
+}
+
+#confirm-btn {
+    display:none;
+}
+
+.error-container {
+    padding: 40px;
+    margin: auto 20%;
+    background-color: #2D78E9;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 5px 8px rgb(43, 42, 42);
+}
+.error-true{
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #DC3545;
+    color: white;
+    font-size: 25px;
+}
+.error-false{
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #198754;
+    color: white;
+    font-size: 25px;
+}
+.space{
+    display: block;
+    height: 10px;
+}
+
+.status-vert{
+    background-color: #1AF257;
+}
+.status-rouge{
+    background-color: #DC3545;
+}
+.status-rouge div input,
+.status-rouge .report-btns button,
+.status-vert div input,
+.status-vert .report-btns button{
+    box-shadow: none;
+}
+.status-vert .report-btns button{
+    background-color: #42d16b;
+}
+.status-vert .report-btns button:hover{
+    background-color: #138333;
+}
+.status-rouge .report-btns button{
+    background-color: #e06672;
+}
+.status-rouge .report-btns button:hover{
+    background-color: #a02733;
+}
+.passwd-manager{
+    display: none;
+}
+
+.ask-ticket {
+    margin-left: 50%;
+    margin-bottom: 50px;
+    padding: 40px;
+    transform: translateX(-50%);
+    font-size: 25px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    background: #2D78E9;
+    box-shadow: 0 0 10px #040176;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.ask-ticket div:nth-child(1){
+    display: flex;
+}
+.ask-ticket input {
+    padding: 2px;
+    font-size: 25px;
+    width: 300px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.btns {
+    margin-left: 50%;
+    padding: 20px;
+    transform: translateX(-50%);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.ask-ticket button {
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #040176;
+}
+
+.btns button a{
+    text-decoration: none;
+    color: white;
+}
+/*********************** PARTIE MOBILE ************************/
+@media screen and (max-width: 1100px) {
+    /*page info user*/
+    .infos{
+        height: 40px;
+        padding: 2px;
+        font-size: 20px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .report input,
+    .report .date{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-size: 25px;
+        width: 80%;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .informations div.infos label{
+        margin-right: 30px;
+        margin-top: 7px;
+    }
+}
+@media screen and (max-width: 850px){
+    .dropdown{
+        display: none;
+    }
+    /* logo-container */
+    .logo-container .logo{
+        height: 70px;
+    }
+    .logo-container .title-site{
+        font-size: 25px;
+    }
+    /*my-reports tite*/
+    .my-reports {
+        font-size: 35px;
+        margin-bottom: 35px;
+    }
+    .my-reports2 {
+        font-size: 35px;
+    }
+    .h1-myreports{
+        font-size: 35px;
+    }
+    .h2-myreports{
+        font-size: 15px;
+    }
+    /* footer */
+    .fm-logo{
+        width: 100px;
+        border-radius: 5px;
+    }
+    .socialnw-logo {
+        margin-right: 30px;
+        font-size: 30px;
+    }
+    footer .socialnw a i img{
+        filter:  brightness(0) invert(1);
+        height: 30px;
+    }
+    .title-page{
+        font-size: 30px;
+    }
+    .report {
+        width: 80%;
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .edit-btn {
+        padding: 7px;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    .ask{
+        padding: 3px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .informations .input-edit,
+    .informations .input-non-edit,
+    .informations select{
+        font-size: 20px;
+    }
+
+    .error-container {
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .error-true,
+    .error-false{
+        padding: 15px;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 740px){
+    .informations {
+        margin: auto 5%;
+        border-radius: 5px;
+    }
+}
